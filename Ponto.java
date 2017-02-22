@@ -16,21 +16,16 @@ public class Ponto{
 	public static void main(String[]args){
 		System.out.println("Rodrigo");
 		Ponto p1 = new Ponto();
-			p1.setX(10);
-			p1.setY(20);
+			p1.setX(20);
+			p1.setY(10);
 		Ponto p2 = new Ponto();
-			p2.setX(15);
-			p2.setY(30);
-		Ponto p3 = new Ponto();
-			p3.setX(50);
-			p3.setY(70);
-		p3 = p1;
-		Ponto p4 = p3;
-		
-		System.out.println(p1.getX());
-		System.out.println(p1.getY());
-		System.out.println(p2.getX());
-		System.out.println(p2.getY());
-
+			p2.setX(16);
+			p2.setY(7);
+		double cat1,cat2;
+		cat1 = p1.getX()-p2.getX();
+		cat2 = p1.getY()-p2.getY();
+		cat1 = cat1*cat1;
+		cat2 = cat2*cat2;
+		System.out.println(Math.sqrt(cat1+cat2));
 	}
 }
