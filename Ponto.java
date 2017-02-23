@@ -1,5 +1,12 @@
 public class Ponto{
 	private double x,y;
+	public Ponto(){
+		System.out.println("Construtor1-" + this);
+	}
+	public Ponto(double x){
+		System.out.println("construtor 2");
+	}
+
 	public void setX(double x){
 		this.x = x;
 	}
@@ -29,3 +36,4 @@ public class Ponto{
 		System.out.println(Math.sqrt(cat1+cat2));
 	}
 }
+
