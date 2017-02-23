@@ -21,19 +21,22 @@ public class Ponto{
 	}
 
 	public static void main(String[]args){
-		System.out.println("Rodrigo");
+
 		Ponto p1 = new Ponto();
-			p1.setX(20);
-			p1.setY(10);
-		Ponto p2 = new Ponto();
-			p2.setX(16);
-			p2.setY(7);
-		double cat1,cat2;
-		cat1 = p1.getX()-p2.getX();
-		cat2 = p1.getY()-p2.getY();
-		cat1 = cat1*cat1;
-		cat2 = cat2*cat2;
-		System.out.println(Math.sqrt(cat1+cat2));
-	}
+                        p1.setX(20);
+                        p1.setY(10);
+                Ponto p2 = new Ponto();
+                        p2.setX(16);
+                        p2.setY(7);
+		Reta r1 = new Reta();
+		r1.setP1(p1);
+		r1.setP2(p2);
+		r1.getP1().getX();
+		r1.getP2().getY();
+		p1.setX(30);
+		r1.getP2().setY(40);
+		System.out.println("r1.p1.x= " + r1.getP1().getX() + " r1.p1.y = " + r1.getP1().getY() + " r1.p2.x= " + r1.getP2().getX() + " r1.p2.y= " + r1.getP2().getY());
+		System.out.println("Rodrigo");
+			}
 }
 
