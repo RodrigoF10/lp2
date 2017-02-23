@@ -37,6 +37,9 @@ public class Ponto{
 		r1.getP2().setY(40);
 		System.out.println("r1.p1.x= " + r1.getP1().getX() + " r1.p1.y = " + r1.getP1().getY() + " r1.p2.x= " + r1.getP2().getX() + " r1.p2.y= " + r1.getP2().getY());
 		System.out.println("Rodrigo");
+
+		double re = r1.area();
+		System.out.println(re);
 			}
 }
 

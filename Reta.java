@@ -12,5 +12,24 @@ public class Reta{
 	public Ponto getP2(){
 		return this.p2;
 	}
-
+	public double area(){
+		double x1, x2,y1,y2,xr,yr;
+		x1 = getP1().getX();
+		x2 = getP2().getX();
+		y1 = getP1().getY();
+		y2 = getP2().getY();
+		xr = x1 - x2;
+		yr = y1 - y2;
+		xr = Math.abs(xr);
+		yr = Math.abs(yr);
+		if((yr - y1)<(yr - y2)){
+			return((y2*xr)+((xr*yr)/2));
+		}
+		 if((yr - y1)>(yr - y2)){
+                        return((y1*xr)+((xr*yr)/2));
+                }
+		return 1; 
+	}
 }
+
+
