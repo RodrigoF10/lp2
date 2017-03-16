@@ -11,11 +11,12 @@ public class Disciplina{
 		this.professor = professor;
 	}
 
-	public String getNome(String nome){		
-		return nome;
+	public String getNome(){		
+		return this.nome;
 	}
 
-	public String getProfessor(String nome){
-		return professor;
+	public String getProfessor(){
+		return this.professor;
 	}
+}
 
