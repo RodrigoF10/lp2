@@ -1,0 +1,18 @@
+public class ProgramaException{
+	private int variavel;
+	public static void main(String [] args){
+		testeException1();	
+	}
+	public static void testException1(){
+		int[]vetor1 = new int[5];
+		System.out.println("Teste Exception 1");
+		try{
+			vetor1[6] = 10;	
+			System.out.println("Teste exception 1 - Após o erro");	
+		}
+		catch(ProgramaException e){
+			System.out.println("Um erro ocoreu.E este erro foi:");
+			e.printStrackTrace();
+		}	
+	}
+}
