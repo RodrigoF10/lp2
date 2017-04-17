@@ -4,10 +4,15 @@ public class Exceptions{
 
 	public static void main(String[] args){
 
-/		testeException1();
-		testeException2();
-		testeException3();
-
+//		testeException1();
+//		testeException2();
+//		testeException3();
+		try{
+			testeException4();
+		}
+		catch(NullPointerException e){
+			System.out.println("Erro NullPointerException");
+		}
 	}
 
 	public static void testeException1(){
@@ -69,5 +74,16 @@ public class Exceptions{
 			System.out.println("Teste Exceptions 3 - Finally");
 		}
 
+	}
+
+	public static void testeException4() throws NullPointerException{
+		int [] vetor1 = new int[5];
+		System.out.println("Teste Exception 4 - Inicio");
+		try{
+			vetor1[6] = 10;
+		}
+		catch(Exception e){
+		throw new NullPointerException();
+		}
 	}
 }
